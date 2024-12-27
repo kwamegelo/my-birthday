@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #83a4d4, #b6fbff);
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading Animation */
+.animate-text {
+    font-size: 2.5em;
+    color: #0077cc;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+/* Paragraph Styling */
+.description {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact {
+    font-size: 1.5em;
+    color: #ff5733;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styling */
+.copy-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #005fa3;
+}
+
+/* Status Message */
+#status {
+    margin-top: 10px;
+    font-size: 1em;
+    color: green;
+}
+.gelo {
+    font-family: cursive;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        color: #0077cc;
+    }
+    50% {
+        color: #005fa3;
+    }
+}
